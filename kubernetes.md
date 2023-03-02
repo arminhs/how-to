@@ -32,7 +32,7 @@ Kubernetes Day 2 Operations are critical to ensuring that a Kubernetes cluster c
 
 1. Install Docker: kind relies on Docker to create Kubernetes nodes, so you will need to install Docker on your machine. You can download Docker for your operating system from the official website: https://www.docker.com/get-started
 1. Install kind: kind is a tool that makes it easy to create Kubernetes clusters. You can install kind using the following command:
-```shell
+```
 $ curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64
 $ chmod +x ./kind
 $ sudo mv ./kind /usr/local/bin/kind
@@ -48,12 +48,12 @@ nodes:
 ```
 This configuration file specifies a cluster with one control plane node and two worker nodes.
 1. Create the Kubernetes cluster: To create the cluster, run the following command:
-```shell```
+```
 $ kind create cluster --config kind-config.yaml
 ```
 This will create a new Kubernetes cluster with the configuration specified in the kind-config.yaml file.
 1. Verify the cluster: Once the cluster has been created, you can verify that it is running by running the following command:
-```shell
+```
 $ kubectl cluster-info
 ```
 This will display information about the Kubernetes cluster.
